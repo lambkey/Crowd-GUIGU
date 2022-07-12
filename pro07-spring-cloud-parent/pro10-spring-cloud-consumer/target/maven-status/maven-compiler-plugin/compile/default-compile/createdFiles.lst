@@ -1,0 +1,4 @@
+lamb\key\spring\cloud\consumer\ConsumeMainApplication.class
+application.yml
+lamb\key\spring\cloud\consumer\config\ConsumeCloudConfig.class
+lamb\key\spring\cloud\consumer\controller\HumanResourceController.class

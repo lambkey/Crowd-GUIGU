@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: lambkey-redis
+
+# redis配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    timeout: 5000
+    database: 0
+
+# 配置访问redis微服务的端口号
+server:
+  port: 3000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+logging:
+  level:
+    lamb.key.crowd.redis: debug

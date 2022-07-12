@@ -1,0 +1,41 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+
+zuul:
+  ignored-services: '*'
+  sensitive-headers: # 在Zuul向其他服务重定向时保持原本头信息(请求头，消息头)
+  routes:
+    auth:
+      serviceId: lambkey-auth
+      path: /**
+      url: http://localhost:4000/
+      #path: /lamb/**
+    project:
+      serviceId: lambkey-project-consumer
+      path: /project/**
+    order:
+      serviceId: lambkey-order-consumer
+      path: /order/**
+    pay:
+      serviceId: lambkey-pay-consumer
+      path: /pay/**
+
+# zuul超时配置
+ribbon:
+ ReadTimeout: 80000
+ ConnectTimeout: 80000
+
+# 指定redis服务ip地址
+spring:
+  redis:
+    host: 127.0.0.1
+
+# 开启服务之间的session共享服务，session存入redis
+  session:
+    store-type: redis

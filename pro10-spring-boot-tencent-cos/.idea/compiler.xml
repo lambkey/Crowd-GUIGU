@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pro14-spring-cloud-zuul" />
+        <module name="pro09-spring-cloud-provider" />
+        <module name="pro06-spring-boot-thymeleaf-project" />
+        <module name="pro05-spring-boot-redis-project" />
+        <module name="pro08-spring-cloud-common" />
+        <module name="pro10-spring-boot-consumer" />
+        <module name="pro08-spring-boot-short-message" />
+        <module name="pro12-spring-cloud" />
+        <module name="pro11-spring-cloud-eureka" />
+        <module name="pro13-spring-cloud-hystrix-dashboard" />
+        <module name="pro04-spring-boot-mybatis-project" />
+        <module name="pro09-spring-session-b" />
+        <module name="pro09-spring-session-a" />
+        <module name="pro01-spring-security" />
+        <module name="pro02-spring-boot-maven-project" />
+        <module name="pro10-spring-boot-tencent-cos" />
+        <module name="pro3-spring-boot-plugin-project" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atcrowdfunding01-admin-parent" target="1.5" />
+      <module name="atcrowdfunding02-admin-webui" target="8" />
+      <module name="atcrowdfunding03-admin-component" target="8" />
+      <module name="atcrowdfunding04-admin-entity" target="8" />
+      <module name="atcrowdfunding05-common-util" target="8" />
+      <module name="atcrowdfunding06-common-reverse" target="8" />
+      <module name="atcrowdfunding07-member-eureka" target="8" />
+      <module name="atcrowdfunding07-member-parent" target="8" />
+      <module name="atcrowdfunding09-member-entity" target="8" />
+      <module name="atcrowdfunding10-member-mysql-provider" target="8" />
+      <module name="atcrowdfunding11-member-redis-provider" target="8" />
+      <module name="atcrowdfunding12-member-authentication-consumer" target="8" />
+      <module name="atcrowdfunding13-member-project-consumer" target="8" />
+      <module name="atcrowdfunding14-member-order-consumer" target="8" />
+      <module name="atcrowdfunding15-member-pay-consumer" target="8" />
+      <module name="atcrowdfunding16-member-member-api" target="8" />
+      <module name="atcrowdfunding17-member-member-zuul" target="8" />
+      <module name="pro01-spring-security" target="8" />
+      <module name="pro02-spring-boot-maven-project" target="8" />
+      <module name="pro04-spring-boot-mybatis-project" target="1.8" />
+      <module name="pro05-spring-boot-redis-project" target="8" />
+      <module name="pro06-spring-boot-thymeleaf-project" target="8" />
+      <module name="pro07-spring-cloud-parent" target="8" />
+      <module name="pro08-spring-boot-short-message" target="8" />
+      <module name="pro08-spring-cloud-common" target="8" />
+      <module name="pro09-spring-cloud-provider" target="8" />
+      <module name="pro09-spring-session-a" target="8" />
+      <module name="pro09-spring-session-b" target="8" />
+      <module name="pro10-spring-boot-consumer" target="8" />
+      <module name="pro10-spring-boot-tencent-cos" target="8" />
+      <module name="pro11-spring-cloud-eureka" target="8" />
+      <module name="pro12-spring-cloud" target="8" />
+      <module name="pro13-spring-cloud-hystrix-dashboard" target="8" />
+      <module name="pro14-spring-cloud-zuul" target="8" />
+      <module name="pro3-spring-boot-plugin-project" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pro02-spring-boot-maven-project" options="-parameters" />
+      <module name="pro04-spring-boot-mybatis-project" options="-parameters" />
+      <module name="pro05-spring-boot-redis-project" options="-parameters" />
+      <module name="pro06-spring-boot-thymeleaf-project" options="-parameters" />
+      <module name="pro08-spring-boot-short-message" options="-parameters" />
+      <module name="pro09-spring-session-a" options="-parameters" />
+      <module name="pro09-spring-session-b" options="-parameters" />
+      <module name="pro10-spring-boot-tencent-cos" options="-parameters" />
+      <module name="pro3-spring-boot-plugin-project" options="-parameters" />
+    </option>
+  </component>
+</project>

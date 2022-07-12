@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fa74cb3a-7a9f-4de4-b091-49c6914185dd" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\devlopment\apache-maven-3.8.5\repository" />
+        <option name="userSettingsFile" value="D:\devlopment\apache-maven-3.8.5\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="296mgSnbNduLvCNZR1mOug30uFQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../java砺锋第三阶段代码/springboot-mp" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\砺锋\第三阶段项目\尚筹网\pro02-spring-boot-maven-project\src\test" />
+      <recent name="D:\砺锋\第三阶段项目\尚筹网\pro02-spring-boot-maven-project\src\test\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\砺锋\第三阶段项目\尚筹网\pro02-spring-boot-maven-project\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.WebSpringBootTest">
+    <configuration name="WebSpringBootTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pro02-spring-boot-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lamb.key.spring.boot.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lamb.key.spring.boot.test" />
+      <option name="MAIN_CLASS_NAME" value="lamb.key.spring.boot.test.WebSpringBootTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSpringBootTest.testRead" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="pro02-spring-boot-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lamb.key.spring.boot.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lamb.key.spring.boot.test" />
+      <option name="MAIN_CLASS_NAME" value="lamb.key.spring.boot.test.WebSpringBootTest" />
+      <option name="METHOD_NAME" value="testRead" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSpringBootApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="pro02-spring-boot-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lamb.key.spring.boot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lamb.key.spring.boot.WebSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="pro02-spring-boot-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lamb.key.spring.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lamb.key.spring.WebSpringBootApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.WebSpringBootTest" />
+        <item itemvalue="JUnit.WebSpringBootTest.testRead" />
+        <item itemvalue="Spring Boot.WebSpringBootApplication (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBootOptions">
+    <option name="showAdditionalConfigNotification" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa74cb3a-7a9f-4de4-b091-49c6914185dd" name="Default Changelist" comment="" />
+      <created>1652442023363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652442023363</updated>
+      <workItem from="1652442024813" duration="26000" />
+      <workItem from="1652442110241" duration="4225000" />
+      <workItem from="1652447666158" duration="4150000" />
+      <workItem from="1652627842331" duration="1617000" />
+      <workItem from="1652660794937" duration="510000" />
+      <workItem from="1652681288236" duration="3118000" />
+      <workItem from="1652698388720" duration="6101000" />
+      <workItem from="1652715262211" duration="22000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

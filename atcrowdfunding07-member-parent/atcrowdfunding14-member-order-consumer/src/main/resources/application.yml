@@ -1,0 +1,22 @@
+server:
+  port: 6000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+spring:
+  application:
+    name: lambkey-order-consumer
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+
+  redis:
+    host: 127.0.0.1
+
+  session:
+    store-type: redis
+

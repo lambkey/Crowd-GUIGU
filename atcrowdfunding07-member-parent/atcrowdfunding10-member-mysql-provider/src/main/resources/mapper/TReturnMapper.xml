@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lamb.key.crowd.mapper.TReturnMapper">
+
+<!--content,count,describ_pic_path,freight,invoice,projectid,
+purchase,returndate,signalpurchase,supportmoney,type-->
+
+<!--void saveReturnInfo(@Param("returnPOList") List<ReturnPO> returnPOList,
+                        @Param("projectId") Integer projectId);-->
+
+    <insert id="saveReturnInfo">
+        insert into t_return
+            (content,
+             count,
+             describ_pic_path,
+             freight,
+             invoice,
+             projectid,
+             purchase,
+             returndate,
+             signalpurchase,
+             supportmoney,
+             type)values
+        <foreach collection="returnPOList" item="returnPO" separator=",">
+            (
+            #{returnPO.content},
+            #{returnPO.count},
+            #{returnPO.describPicPath},
+            #{returnPO.freight},
+            #{returnPO.invoice},
+            #{projectId},
+            #{returnPO.purchase},
+            #{returnPO.returndate},
+            #{returnPO.signalpurchase},
+            #{returnPO.supportmoney},
+            #{returnPO.type}
+            )
+        </foreach>
+
+    </insert>
+</mapper>

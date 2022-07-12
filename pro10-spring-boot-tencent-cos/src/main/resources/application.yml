@@ -1,0 +1,9 @@
+spring:
+  tencent:
+    accesskey: AKIDCE2bv0qQlqgJisnS3PWO0NVN0NVN0NVN
+    secretKey: f4GDvNaYKsBE3d1B6lBLGvLXUCeroVx9
+    bucket: ap-guangzhou
+    bucketName: lambkey-1309051782
+    path: https://lambkey-1309051782.cos.ap-guangzhou.myqcloud.com
+
+

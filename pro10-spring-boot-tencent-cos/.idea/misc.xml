@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui" />
+    <file type="web" url="file://$PROJECT_DIR$/../pro01-spring-security" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro09-spring-session-b/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro09-spring-session-a/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro08-spring-boot-short-message/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro07-spring-cloud-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro06-spring-boot-thymeleaf-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro05-spring-boot-redis-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro04-spring-boot-mybatis-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro03-spring-boot-plugin-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro02-spring-boot-maven-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro01-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding01-admin-parent/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding01-admin-parent/atcrowdfunding03-admin-component/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding01-admin-parent/atcrowdfunding04-admin-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding08-member-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding09-member-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding10-member-mysql-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding11-member-redis-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding12-member-authentication-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding13-member-project-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding14-member-order-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding15-member-pay-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding16-member-member-api/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/atcrowdfunding17-member-member-zuul/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

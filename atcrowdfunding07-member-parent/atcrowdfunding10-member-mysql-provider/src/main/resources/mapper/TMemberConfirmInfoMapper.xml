@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lamb.key.crowd.mapper.TMemberConfirmInfoMapper">
+<!--    @Insert("insert into t_member_confirm_info(memberid,paynum,cardnum)
+values(#{memberConfirmInfoPO.memberid},#{memberConfirmInfoPO.paynum},#{memberConfirmInfoPO.cardnum})")-->
+
+</mapper>

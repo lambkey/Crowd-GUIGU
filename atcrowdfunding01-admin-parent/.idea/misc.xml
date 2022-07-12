@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/atcrowdfunding02-admin-webui" />
+    <file type="web" url="file://$PROJECT_DIR$/../pro01-spring-security" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding05-common-util/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding05-common-reverse/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding06-common-reverse/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro01-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro02-spring-boot-maven-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro3-spring-boot-plugin-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro04-spring-boot-mybatis-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro03-spring-boot-plugin-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro05-spring-boot-redis-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro06-spring-boot-thymeleaf-project/pom.xml" />
+        <option value="$PROJECT_DIR$/../pom.xml" />
+        <option value="$PROJECT_DIR$/../pro07-spring-boot-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro07-spring-boot-parent/pro10-spring-boot-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro07-spring-cloud-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro07-spring-cloud-parent/pro10-spring-cloud-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/../atcrowdfunding07-member-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro08-spring-boot-short-message/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro09-spring-session-a/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro09-spring-session-b/pom.xml" />
+        <option value="$PROJECT_DIR$/../pro10-spring-boot-tencent-cos/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

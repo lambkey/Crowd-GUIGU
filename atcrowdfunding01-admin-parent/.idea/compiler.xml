@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pro09-spring-cloud-provider" />
+        <module name="pro12-spring-cloud-feign-consumer" />
+        <module name="atcrowdfunding04-admin-entity" />
+        <module name="pro05-spring-boot-redis-project" />
+        <module name="pro08-spring-cloud-common" />
+        <module name="atcrowdfunding17-member-member-zuul" />
+        <module name="pro10-spring-boot-consumer" />
+        <module name="pro03-spring-boot-plugin-project" />
+        <module name="atcrowdfunding06-common-reverse" />
+        <module name="pro12-spring-cloud" />
+        <module name="pro11-spring-cloud-eureka" />
+        <module name="atcrowdfunding09-member-entity" />
+        <module name="atcrowdfunding05-common-util" />
+        <module name="pro10-spring-boot-tencent-cos" />
+        <module name="atcrowdfunding13-member-project-consumer" />
+        <module name="atcrowdfunding02-admin-webui" />
+        <module name="pro06-spring-boot-thymeleaf-project" />
+        <module name="pro14-spring-cloud-zuul" />
+        <module name="atcrowdfunding14-member-order-consumer" />
+        <module name="pro08-spring-boot-short-message" />
+        <module name="atcrowdfunding08-member-eureka" />
+        <module name="atcrowdfunding16-member-member-api" />
+        <module name="pro04-spring-boot-mybatis-project" />
+        <module name="pro13-spring-cloud-hystrix-dashboard" />
+        <module name="atcrowdfunding10-member-mysql-provider" />
+        <module name="pro09-spring-session-b" />
+        <module name="pro10-spring-cloud-consumer" />
+        <module name="atcrowdfunding15-member-pay-consumer" />
+        <module name="pro09-spring-session-a" />
+        <module name="atcrowdfunding12-member-authentication-consumer" />
+        <module name="pro01-spring-security" />
+        <module name="pro02-spring-boot-maven-project" />
+        <module name="atcrowdfunding11-member-redis-provider" />
+        <module name="atcrowdfunding03-admin-component" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atcrowdfunding05-admin-entity" target="8" />
+      <module name="atcrowdfunding07-member-authentication-consumer" target="8" />
+      <module name="atcrowdfunding07-member-pay-consumer" target="8" />
+      <module name="尚筹网" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="pro02-spring-boot-maven-project" options="-parameters" />
+      <module name="pro03-spring-boot-plugin-project" options="-parameters" />
+      <module name="pro04-spring-boot-mybatis-project" options="-parameters" />
+      <module name="pro05-spring-boot-redis-project" options="-parameters" />
+      <module name="pro06-spring-boot-thymeleaf-project" options="-parameters" />
+      <module name="pro08-spring-boot-short-message" options="-parameters" />
+      <module name="pro09-spring-session-a" options="-parameters" />
+      <module name="pro09-spring-session-b" options="-parameters" />
+      <module name="pro10-spring-boot-tencent-cos" options="-parameters" />
+    </option>
+  </component>
+</project>

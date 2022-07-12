@@ -1,0 +1,10 @@
+spring:
+  redis:
+    host: 127.0.0.1
+
+# SpringSession配置
+  session:
+    store-type: redis
+
+server:
+  port: 8090

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../pro01-spring-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro01-spring-security/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro02-spring-boot-maven-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro02-spring-boot-maven-project/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro03-spring-boot-plugin-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro03-spring-boot-plugin-project/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro04-spring-boot-mybatis-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro05-spring-boot-redis-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro06-spring-boot-thymeleaf-project/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro08-spring-boot-short-message/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro09-spring-session-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro09-spring-session-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pro10-spring-boot-tencent-cos/src/main/java" charset="UTF-8" />
+  </component>
+</project>

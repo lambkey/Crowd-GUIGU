@@ -1,0 +1,10 @@
+spring:
+# 关闭thymeleaf缓存，便于开发时调试
+# 设置thymeleaf解析后缀
+  thymeleaf:
+    cache: false
+    suffix: .html
+# 设定服务的contextPath
+server:
+  servlet:
+    context-path: /lamb

@@ -1,0 +1,26 @@
+# 程序修改默认端口
+# 修改默认访问路径
+server:
+  port: 8090
+  servlet:
+    context-path: /text
+
+# 修改日志级别
+logging:
+    level:
+      lamb.key.spring.boot.test: debug
+
+# 给对应的student实体类赋值
+student:
+  stu-age: 13
+  stu-courses: 摄影,php,java,python
+  stu-name: 张三
+  stu-school: 清华大学
+  city:
+    name: 湛江
+    numb: 020123456
+  stu-sex: 男
+
+lamb.key.wish: 生日快乐
+
+

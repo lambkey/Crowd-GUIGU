@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+<!--文本替换-->
+<p th:text="嘻嘻">你好</p>
+
+<!--访问属性域-->
+<h1>访问属性域</h1>
+<h3 th:text="${attrNameRequestScope}">访问请求域</h3>
+<h3 th:text="${session.attrNameSessionScope}">访问Session</h3>
+<h3 th:text="${application.attrNameContextScope}">访问Session</h3>
+
+<!--域名解析-->
+<h1>域名解析</h1>
+<h3 th:text="@{/aaa/bbb/ccc}">/aaa/bbb/ccc</h3>
+<a href="../aaa/bbb/ccc.html" th:href="@{/aaa/ccc/ddd.html}">使用场景</a>
+
+<!--foreach遍历集合-->
+<h1>each遍历集合</h1>
+<h3 th:text="${english}" th:each="english : ${list}"></h3>
+
+<!--包含其他模板文件-->
+<h1>包含其他模板文件</h1>
+<div th:insert="~{include/modal::myFirstPart}"></div>
+<div th:replace="~{include/modal::myFirstPart}"></div>
+<div th:include="~{include/modal::myFirstPart}"></div>
+</body>
+</html>

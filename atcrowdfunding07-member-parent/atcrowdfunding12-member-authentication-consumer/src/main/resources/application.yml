@@ -1,0 +1,36 @@
+server:
+  port: 4000
+
+# thymeleaf
+spring:
+  application:
+    name: lambkey-auth
+  thymeleaf:
+    suffix: .html
+    prefix: classpath:/templates/
+    cache: false
+  # 指定redis服务ip地址
+  redis:
+    host: 127.0.0.1
+  # 开启服务之间的session共享服务，session存入redis
+  session:
+    store-type: redis
+
+# eureka注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+
+send:
+  sms:
+    appid: 1400686692
+    app-key: 966349078da0de20484d51a5b25297e4
+    template-id: 1425202
+    sign-content: 个人项目部署
+    valid-time: 5
+
+
+
+

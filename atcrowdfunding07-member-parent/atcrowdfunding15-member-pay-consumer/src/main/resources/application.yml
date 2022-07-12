@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1000/eureka
+
+spring:
+  application:
+    name: lambkey-pay-consumer
+  thymeleaf:
+    cache: false
+    suffix: .html
+    prefix: classpath:/templates/
+
+  redis:
+    host: 127.0.0.1
+
+  session:
+    store-type: redis
+
+ali:
+  pay:
+    app-id: 2021000121611077
+    merchant-private-key: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCC/sHMxVTeS/l5DHCd/UywpWMizXT3439k6V8zs+3rnaaRFBLaTJYTmilJbvEuRS3rhVQuyTLKGgD1Y00iQh0lh4dryTBK95qrE1in5Wz3THVcrjDYy/6XEonTWhcY+4VAtBa2i1YriFwSFe3VVODlwfup/O2BvYssYnpuUJdPSm9QzFBzdjiEg1zeVR8W/N9WuCVvv1gnJ2RzMGQl8CS6oinFIcTr3imPc1k2YzA35vJ4Ysr+63tEmjLrxNdqZyJz/535x8Ti4JGqzA6gGsW2cUaSJXpwX/J3dfhfzH7QLRmmAAoWWraPaMakj8Pr6DaA6m3m8qnGdcGufphT/lLVAgMBAAECggEAKvbRq47hWhPDHC+3VCo7GAj2rfiDL7a/FuLwJa4TD99iPV0/HbhW1NEQT5SCqDFqcUAGr12wOdczj0hliSH0G1YLVY/kNgJmCUxMHK1EAwxhxecgAEtQEk6zQ83dm4ULXIB0nqSuu5J62De3DOxM4y6vkz5wy8fWONWH4FywdAGxJ4rscGLbKctiIG1FEfrFlwaTPdsskyPyDuPnoBxR/vMhElRrodPRuRTcmhD/N7C0g95fv3EIvPsL+TkaZXSGgF0RVrbBUidKl3LU+sPNZlwt3fJ5PrNdTjZw9tdlHhYD6PrOwMy6A4mL19RJjBswWJVcZIPqT/nr7l/ajdrUQQKBgQD4X6HPo02YBotDJ0PFxpyCfNp/ve2MC7ctfYSfKa/BUbmUvhGx/4omJxkrCS3hcoo7DHx2id7HI4wSrUODmUbGoMPgTbc8flgARjbLmEJUzifhuorv52sWMUiqE/+SmT6wHQ3rOstbY4bxSZXY1azF6oI+Nw5qVnCgrfYgHozhJQKBgQCHBHV5qeCUDPBraxEj951t2UGmc6I/mqn5ftL1U6txml5DGFBsODAZT5KyJjvg5TWynXISUAxzjeaiP2vb0c5iaZxnaZVQawFM0daIuCjy76DL/bLrCZ9D2KhwSHw8E1r1LUGJtGUgW6Ix8v2eJSuPCBO8C39o99kQX196ITQz8QKBgACeJEXi7xd4tLH3EAkW5F7CtrxomYWmpc78J+9JaEF/1YlUK7EYpJxRrpNX04BjC4r4DfsxfpdaNEf7nFZgdDecQMB3EQSaf9eIVSyOdWPGm3zJPP05wx9sAfVCVXlk3i4L9HPoUocoqTZCa5f9eA+J9Mb41hVXn7IWnK0ZxlntAoGAR8r3LFpIMHEw5e1oj9d6vo5nejrCa0+yUhg91HVJFH8g4Extdx3pdYv6VQA/lrZKd0+A+HvYIxmxKVTP5XMKawn9QH/EBZ7gchiiGtDR9Vu2BMJCAPh813a9GfdxGACyvOvzjWV+4FXZSPYMJateHhANblAuz4H6ydnsyuQc/gECgYEA54KthLAmrtrSXJ1UCAw55938TgpEXjJDJpVtlTfHBNZlcKYyFCdWt3uP60rtWsu/ZrweOwoJ+HDNcARikTxT+S1uM3au9/BGWzoBBysVdoWPaP1QwMoGVGgamCxrMBvIQZgIojf2MmdISc52hhDho6btdzFRvQNeQEbitpycrlU=
+    alipay-public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjngF9zds2SgZyVihZC2yQqF8bmg5OFYnAwI4v2WRySfcaXnrFHhsMlO/JLExMI0A2sA8p5nuvj/0Xry9qjxtuv35DnTSQkqXu6LXytV6WpA3UWtsH17iJXApnZtU9UJ/lX20HPrKMkWPhDT5QT/1D2AIqXDtnGDWbJooS3X8vpwGaiJ3HlVTS2gLwa94wzYpnclPVg2/XN5cFpuJ8qcGVz34Rhz3rem9EhjGXAcam9AF1YHvOqU/2JcxCBCY56bgiEiAqtJSpeMVL4rvtZ18fXIEw9VSrbBlVrnR8BKAmYjYh6cPpnQ9C0R80jvgbMj325U4d4G0RzJ2ObeIkqMgZQIDAQAB
+    notify-url: http://zxgfne.natappfree.cc/pay/notify
+    return-url: http://localhost:9000/pay/return
+    sign-type: RSA2
+    charset: utf-8
+    gateway-url: https://openapi.alipaydev.com/gateway.do

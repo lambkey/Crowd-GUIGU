@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pro01-spring-security" />
+        <module name="atcrowdfunding02-admin-webui" />
+        <module name="atcrowdfunding04-admin-entity" />
+        <module name="atcrowdfunding03-admin-component" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="atcrowdfunding01-admin-parent" target="1.5" />
+      <module name="atcrowdfunding02-admin-webui" target="8" />
+      <module name="atcrowdfunding03-admin-component" target="8" />
+      <module name="atcrowdfunding04-admin-entity" target="8" />
+      <module name="pro01-spring-security" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

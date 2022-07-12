@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="lamb.key.crowd.mapper.TProjectMapper">
+
+
+    <resultMap id="loadProjectDetailResultMap" type="lamb.key.crowd.vo.DetailProjectVO">
+        <id column="id" property="projectId" />
+        <result column="project_name" property="projectName"/>
+        <result column="project_description" property="projectDesc"/>
+        <result column="follower" property="followerCount"/>
+        <result column="status" property="status"/>
+        <result column="money" property="money"/>
+        <result column="day" property="day"/>
+        <result column="deploydate" property="deployDate"/>
+        <result column="supportmoney" property="supportMoney"/>
+        <result column="supporter" property="supporterCount"/>
+        <result column="header_picture_path" property="headerPicturePath" />
+        <collection column="id" property="detailPicture"  select="lamb.key.crowd.mapper.TProjectMapper.selectDetailPictureOfDetailProject"/>
+        <collection column="id" property="detailReturnVOList"  select="lamb.key.crowd.mapper.TProjectMapper.selectDetailReturnVOOfDetailProject"/>
+    </resultMap>
+    <!---->
+    <select id="selectDetailProjectVO" resultMap="loadProjectDetailResultMap">
+        select
+            id,
+            project_name ,
+            project_description,
+            follower,
+            status,
+            supportmoney/money*100 percentage,
+            money,
+            day,
+            supporter,
+            supportmoney,
+            deploydate,
+            header_picture_path
+        from t_project
+        where id=#{id}
+
+    </select>
+    <select id="selectDetailReturnVOOfDetailProject" resultType="lamb.key.crowd.vo.DetailReturnVO">
+        select
+            id returnId,
+            supportmoney supportMoney,
+            content,
+            signalpurchase signalPurchase,
+            purchase,
+            freight,
+            returndate
+        from t_return
+        where projectid=#{id}
+    </select>
+
+    <select id="selectDetailPictureOfDetailProject" resultType="java.lang.String">
+        select item_pic_path from t_project_item_pic where projectid=#{id}
+    </select>
+
+
+
+    <resultMap id="LoadPortalProjectListResultMap" type="lamb.key.crowd.vo.PortalTypeVO">
+        <!--常规属性-->
+        <id column="id" property="id"></id>
+        <result column="name" property="name"></result>
+        <result column="remark" property="remark"></result>
+
+        <!--分类数据中包含的项目数据的List-->
+        <!--private List<PortalProjectVO> portalProjectVOList;-->
+        <!--property属性：对应PortalTypeVO中分类数据中的项目数据的List属性 -->
+        <!--column属性：接下来查询项目时需要用到分类id，就是通过column属性把值传入-->
+        <!--ofType属性：项目数据的实体类型PortalProjectVO-->
+        <collection property="portalProjectVOList"
+                    column="id"
+                    ofType="lamb.key.crowd.vo.PortalProjectVO"
+                    select="lamb.key.crowd.mapper.TProjectMapper.selectPortalProjectVOList"></collection>
+    </resultMap>
+
+    <select id="selectPortalTypeVOList" resultMap="LoadPortalProjectListResultMap">
+        select id,name,remark from t_type
+    </select>
+    <!--/*ORDER BY t_project.id DESC 根据id从小到大排列*/-->
+    <select id="selectPortalProjectVOList" resultType="lamb.key.crowd.vo.PortalProjectVO">
+        SELECT t_project.id projectId,
+               project_name projectName,
+               money,
+               deploydate deployDate,
+               supportmoney/money*100 percentage,
+               supporter supporter,
+               header_picture_path headerPicturePath
+        FROM t_project
+        LEFT JOIN t_project_type
+        ON t_project.id=t_project_type.projectid
+        WHERE t_project_type.typeid=#{id}
+        ORDER BY t_project.id DESC
+
+        LIMIT 0,4
+
+    </select>
+
+
+     <!--void insertTagRelationship(@Param("tagIdList") List<Integer> tagIdList,
+                              @Param("projectId") Integer projectId);-->
+    <insert id="insertTagRelationship">
+        insert into t_project_tag(projectid,tagid) values
+        <foreach collection="tagIdList" item="tagId" separator=",">
+            (#{projectId},#{tagId})
+        </foreach>
+
+    </insert>
+
+     <!--void insertTypeRelationship(@Param("typeIdList") List<Integer> typeIdList,
+                               @Param("projectId") Integer projectId);-->
+    <insert id="insertTypeRelationship">
+        insert into t_project_type(projectid,typeid) values
+        <foreach collection="typeIdList" item="typeId" separator=",">
+            (#{projectId},#{typeId})
+        </foreach>
+    </insert>
+
+    <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="lamb.key.crowd.po.ProjectPO">
+        insert into project_crowd.t_project
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="projectName != null">
+                project_name,
+            </if>
+            <if test="projectDescription != null">
+                project_description,
+            </if>
+            <if test="money != null">
+                money,
+            </if>
+            <if test="day != null">
+                day,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="deploydate != null">
+                deploydate,
+            </if>
+            <if test="supportmoney != null">
+                supportmoney,
+            </if>
+            <if test="supporter != null">
+                supporter,
+            </if>
+            <if test="completion != null">
+                completion,
+            </if>
+            <if test="memberid != null">
+                memberid,
+            </if>
+            <if test="createdate != null">
+                createdate,
+            </if>
+            <if test="follower != null">
+                follower,
+            </if>
+            <if test="headerPicturePath != null">
+                header_picture_path,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="projectName != null">
+                #{projectName,jdbcType=VARCHAR},
+            </if>
+            <if test="projectDescription != null">
+                #{projectDescription,jdbcType=VARCHAR},
+            </if>
+            <if test="money != null">
+                #{money,jdbcType=BIGINT},
+            </if>
+            <if test="day != null">
+                #{day,jdbcType=INTEGER},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="deploydate != null">
+                #{deploydate,jdbcType=VARCHAR},
+            </if>
+            <if test="supportmoney != null">
+                #{supportmoney,jdbcType=BIGINT},
+            </if>
+            <if test="supporter != null">
+                #{supporter,jdbcType=INTEGER},
+            </if>
+            <if test="completion != null">
+                #{completion,jdbcType=INTEGER},
+            </if>
+            <if test="memberid != null">
+                #{memberid,jdbcType=INTEGER},
+            </if>
+            <if test="createdate != null">
+                #{createdate,jdbcType=VARCHAR},
+            </if>
+            <if test="follower != null">
+                #{follower,jdbcType=INTEGER},
+            </if>
+            <if test="headerPicturePath != null">
+                #{headerPicturePath,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+</mapper>

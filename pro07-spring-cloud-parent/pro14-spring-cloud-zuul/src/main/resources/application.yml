@@ -1,0 +1,24 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: lambkey-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:5000/eureka
+
+# 配置网关代理微服务域名
+zuul:
+  routes:
+    user:
+      serviceId: lambkey-feign-consume #微服务lambkey-feign-consume被zuul网关代理，访问lambkey-feign-consume资源
+                                       #http://localhost:9000/lambkey-feign-consume/consume/feign/getEmployee
+      path: /key/**                    #http://localhost:9000/key/consume/feign/getEmployee
+
+  ignored-services: lambkey-feign-consume #配置忽略微服务名称访问资源，当用被代理的微服务服务名称去访问时，不通过
+  prefix: /lambkey                        #http://localhost:9000/lambkey/key/consume/feign/getEmployee
+
+
